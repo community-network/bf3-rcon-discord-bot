@@ -32,7 +32,8 @@ class LivePlayercountBot(discord.Client):
                         status = newstatus
                 except:
                     pass
-                await asyncio.sleep(10)
+                # amount of time between updates
+                await asyncio.sleep(120)
  
 async def get_playercount(connection):
     try:                    # use serverInfo command of rcon command list
